@@ -9,12 +9,20 @@ import {
     Menu,
     MenuItem
 } from '@mui/material';
+import { useNavigate } from 'react-router-dom'
+
+
 
 import CatchingPokemonIcon from '@mui/icons-material/CatchingPokemon';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const MuiNavbar = () => {
+    const history = useNavigate();
     const [anchorElementi, setAnchorElementi] = useState(null);
+    const handleLoginClick = () => {
+        history.push('/login'); // Navigate to '/login' route
+        handleClose(); // Close the menu if it's open
+    };
 
     const hapur = Boolean(anchorElementi);
 
@@ -54,7 +62,7 @@ const MuiNavbar = () => {
                         Resources
                     </Button>
                     <Button color='inherit'>About</Button>
-                    <Button color='inherit'>Login</Button>
+                    <Button onClick = {handleLoginClick}color='inherit'>Login</Button>
                 </Stack>
                 <Menu
                     id='resources-menu'
