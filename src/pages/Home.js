@@ -1,5 +1,5 @@
 import React from 'react'
-import MuiNavbar from './components/Navbar'
+import MuiNavbar from '../components/Navbar'
 
 function Home() {
   return (

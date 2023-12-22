@@ -10,6 +10,8 @@ import {
     MenuItem
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom'
+import Login from '../Login/Login';
+
 
 
 
@@ -19,11 +21,11 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 const MuiNavbar = () => {
     const history = useNavigate();
     const [anchorElementi, setAnchorElementi] = useState(null);
+    const [openLogin, setOpenLogin] = useState(false);
     const handleLoginClick = () => {
-        history.push('/login'); // Navigate to '/login' route
-        handleClose(); // Close the menu if it's open
+        history('/login'); 
+        handleClose(); 
     };
-
     const hapur = Boolean(anchorElementi);
 
     const handleClose = () => {
@@ -32,6 +34,11 @@ const MuiNavbar = () => {
 
     const handleClick = (event) => {
         setAnchorElementi(event.currentTarget);
+    };
+
+    const handleOpenLogin = () => {
+        setOpenLogin(true);
+        handleClose(); 
     };
 
     return (
