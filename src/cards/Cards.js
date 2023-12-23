@@ -19,7 +19,7 @@ function MuiCard() {
       <CardMedia
         component="img"
         height="260"
-        image="https://scontent.fprn12-1.fna.fbcdn.net/v/t39.30808-6/299338503_733792568008908_2606317681614748229_n.jpg?stp=c120.0.720.720a_dst-jpg_s851x315&_nc_cat=100&ccb=1-7&_nc_sid=3d9721&_nc_ohc=rM3Pig67N-8AX9p6BvG&_nc_ht=scontent.fprn12-1.fna&oh=00_AfB4az2E3ddEHIYCNlJR4NZn2KFvAH-ZEouRJCoQBxtrFA&oe=658AAA70"
+        image="https://scontent.fprn12-1.fna.fbcdn.net/v/t39.30808-6/326917631_556022326436607_3758278712938516909_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=aWv8yiVVAx0AX9F7HQY&_nc_ht=scontent.fprn12-1.fna&oh=00_AfD1ilVoMUmTgb8JSCG82P6t47PKyyZ-vwVUMfNyivGjkQ&oe=658B7120"
         alt="unsplash image"
       />
 
