@@ -13,7 +13,7 @@ function Login() {
   const handleInput = (event) => {
     setValues(prev => ({...prev, [event.target.name]: [event.target.value]}))
   }
-//Kardat e prozes
+
 
 const handleSubmit = (event) => {
   event.preventDefault()
