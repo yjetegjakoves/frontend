@@ -4,6 +4,7 @@ import Cards from '../cards/Cards'
 import Main from '../components/Main'
 import Beraticard from '../cards/Beraticard'
 import Prozecard from '../cards/Prozecard'
+import KFCcard from '../cards/KFCcard'
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <Cards />
       <Beraticard />
       <Prozecard />
+      <KFCcard />
       <h2>Home page</h2>
     </div>
   )
