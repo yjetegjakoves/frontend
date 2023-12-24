@@ -7,6 +7,7 @@ import Proze from './pages/Proze';
 import Cimi from './pages/Cimi';
 
 
+
 //drilon
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
           <Route path = '/login' element = {<Login />}></Route>
           <Route path = '/proze' element = {<Proze />}></Route>
           <Route path = '/cimi' element = {<Cimi />}></Route>
-
+      
       </Routes>
 
     </BrowserRouter>

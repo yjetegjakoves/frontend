@@ -33,8 +33,8 @@ const handleSubmit = (event) => {
 }
 
   return (
-    <div className = 'd-flex justify-content-center align-items-center vh-100 bg-primary'>
-      <div className = 'bg-white w-25 p-3 rounded'>
+    <div className='d-flex justify-content-center align-items-center h-300 w-300'>
+      <div className = 'bg-white w-300 p-4 rounded'>
         <form action = '' onSubmit = {handleSubmit}>
             <div className = 'mb-3'>
                 <label htmlFor = 'email'><strong>Email</strong></label>

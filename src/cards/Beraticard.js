@@ -15,7 +15,7 @@ import {
      
      <Box sx = {{ display: 'flex', flexwrap: 'wrap', gap: '16px', justifyContent: 'center', alignItems: 'center',}}>
       
-       <Card sx={{ maxWidth: 350 }}>
+      <Card sx={{ maxWidth: 350 , display: 'flex', flexDirection: 'column', alignItems: 'center' , borderRadius: 12 ,'&:hover': { boxShadow: '0 8px 16px rgba(0, 0, 0, 0.3)' } }}>
         <CardMedia
           component="img"
           height="260"
@@ -23,7 +23,7 @@ import {
           alt="unsplash image"
         />
   
-        <CardContent>
+  <CardContent style={{ textAlign: 'center' , display: 'flex', flexDirection: 'column', alignItems: 'center'  }}>
             <Typography gutterBottom variant = 'h5' component = 'div'>
                 4.00 €
             </Typography>
@@ -33,10 +33,12 @@ import {
           </Typography>
          
         </CardContent>
-        <Button size = 'small'Button color = 'inherit'>Porosite Tani</Button>
+        <Button variant="contained" color="secondary" size = 'medium' >
+          Porosite Tani
+          </Button>
       </Card>
 
-      <Card sx={{ maxWidth: 350 }}>
+      <Card sx={{ maxWidth: 350 , display: 'flex', flexDirection: 'column', alignItems: 'center' , borderRadius: 12 ,'&:hover': { boxShadow: '0 8px 16px rgba(0, 0, 0, 0.3)' } }}>
         <CardMedia
           component="img"
           height="260"
@@ -44,7 +46,7 @@ import {
           alt="unsplash image"
         />
   
-        <CardContent>
+  <CardContent style={{ textAlign: 'center' , display: 'flex', flexDirection: 'column', alignItems: 'center'  }}>
             <Typography gutterBottom variant = 'h5' component = 'div'>
                 3.00 €
             </Typography>
@@ -54,11 +56,13 @@ import {
           </Typography>
          
         </CardContent>
-        <Button size = 'small'Button color = 'inherit'>Porosite Tani</Button>
+        <Button variant="contained" color="secondary" size = 'medium' >
+          Porosite Tani
+          </Button>
       </Card>
 
       
-      <Card sx={{ maxWidth: 350 }}>
+      <Card sx={{ maxWidth: 350 , display: 'flex', flexDirection: 'column', alignItems: 'center' , borderRadius: 12 ,'&:hover': { boxShadow: '0 8px 16px rgba(0, 0, 0, 0.3)' } }}>
         <CardMedia
           component="img"
           height="260"
@@ -66,7 +70,7 @@ import {
           alt="unsplash image"
         />
   
-        <CardContent>
+  <CardContent style={{ textAlign: 'center' , display: 'flex', flexDirection: 'column', alignItems: 'center'  }}>
             <Typography gutterBottom variant = 'h5' component = 'div'>
                 3.50 €
             </Typography>
@@ -76,11 +80,13 @@ import {
           </Typography>
          
         </CardContent>
-        <Button size = 'small'Button color = 'inherit'>Porosite Tani</Button>
+        <Button variant="contained" color="secondary" size = 'medium' >
+          Porosite Tani
+          </Button>
       </Card>
 
       
-      <Card sx={{ maxWidth: 350 }}>
+      <Card sx={{ maxWidth: 350 , display: 'flex', flexDirection: 'column', alignItems: 'center' , borderRadius: 12 ,'&:hover': { boxShadow: '0 8px 16px rgba(0, 0, 0, 0.3)' } }}>
         <CardMedia
           component="img"
           height="260"
@@ -88,7 +94,7 @@ import {
           alt="unsplash image"
         />
   
-        <CardContent>
+  <CardContent style={{ textAlign: 'center' , display: 'flex', flexDirection: 'column', alignItems: 'center'  }}>
             <Typography gutterBottom variant = 'h5' component = 'div'>
                 3.00 €
             </Typography>
@@ -98,10 +104,12 @@ import {
           </Typography>
          
         </CardContent>
-        <Button size = 'small'Button color = 'inherit'>Porosite Tani</Button>
+        <Button variant="contained" color="secondary" size = 'medium' >
+          Porosite Tani
+          </Button>
       </Card>
 
-      <Card sx={{ maxWidth: 350 }}>
+      <Card sx={{ maxWidth: 350 , display: 'flex', flexDirection: 'column', alignItems: 'center' , borderRadius: 12 ,'&:hover': { boxShadow: '0 8px 16px rgba(0, 0, 0, 0.3)' } }}>
         <CardMedia
           component="img"
           height="260"
@@ -109,7 +117,7 @@ import {
           alt="unsplash image"
         />
   
-        <CardContent>
+  <CardContent style={{ textAlign: 'center' , display: 'flex', flexDirection: 'column', alignItems: 'center'  }}>
             <Typography gutterBottom variant = 'h5' component = 'div'>
                 5.00 €
             </Typography>
@@ -119,10 +127,12 @@ import {
           </Typography>
          
         </CardContent>
-        <Button size = 'small'Button color = 'inherit'>Porosite Tani</Button>
+        <Button variant="contained" color="secondary" size = 'medium' >
+          Porosite Tani
+          </Button>
       </Card>
 
-      <Card sx={{ maxWidth: 350 }}>
+      <Card sx={{ maxWidth: 350 , display: 'flex', flexDirection: 'column', alignItems: 'center' , borderRadius: 12 ,'&:hover': { boxShadow: '0 8px 16px rgba(0, 0, 0, 0.3)' } }}>
         <CardMedia
           component="img"
           height="260"
@@ -130,7 +140,7 @@ import {
           alt="unsplash image"
         />
   
-        <CardContent>
+  <CardContent style={{ textAlign: 'center' , display: 'flex', flexDirection: 'column', alignItems: 'center'  }}>
             <Typography gutterBottom variant = 'h5' component = 'div'>
                 3.50 €
             </Typography>
@@ -140,10 +150,12 @@ import {
           </Typography>
          
         </CardContent>
-        <Button size = 'small'Button color = 'inherit'>Porosite Tani</Button>
+        <Button variant="contained" color="secondary" size = 'medium' >
+          Porosite Tani
+          </Button>
       </Card>
 
-      <Card sx={{ maxWidth: 350 }}>
+      <Card sx={{ maxWidth: 350 , display: 'flex', flexDirection: 'column', alignItems: 'center' , borderRadius: 12 ,'&:hover': { boxShadow: '0 8px 16px rgba(0, 0, 0, 0.3)' } }}>
         <CardMedia
           component="img"
           height="260"
@@ -151,7 +163,7 @@ import {
           alt="unsplash image"
         />
   
-        <CardContent>
+  <CardContent style={{ textAlign: 'center' , display: 'flex', flexDirection: 'column', alignItems: 'center'  }}>
             <Typography gutterBottom variant = 'h5' component = 'div'>
                 4.00 €
             </Typography>
@@ -161,10 +173,12 @@ import {
           </Typography>
          
         </CardContent>
-        <Button size = 'small'Button color = 'inherit'>Porosite Tani</Button>
+        <Button variant="contained" color="secondary" size = 'medium' >
+          Porosite Tani
+          </Button>
       </Card>
 
-      <Card sx={{ maxWidth: 350 }}>
+      <Card sx={{ maxWidth: 350 , display: 'flex', flexDirection: 'column', alignItems: 'center' , borderRadius: 12 ,'&:hover': { boxShadow: '0 8px 16px rgba(0, 0, 0, 0.3)' } }}>
         <CardMedia
           component="img"
           height="260"
@@ -172,7 +186,7 @@ import {
           alt="unsplash image"
         />
   
-        <CardContent>
+  <CardContent style={{ textAlign: 'center' , display: 'flex', flexDirection: 'column', alignItems: 'center'  }}>
             <Typography gutterBottom variant = 'h5' component = 'div'>
                 4.00 €
             </Typography>
@@ -182,10 +196,12 @@ import {
           </Typography>
          
         </CardContent>
-        <Button size = 'small'Button color = 'inherit'>Porosite Tani</Button>
+        <Button variant="contained" color="secondary" size = 'medium' >
+          Porosite Tani
+          </Button>
       </Card>
 
-      <Card sx={{ maxWidth: 350 }}>
+      <Card sx={{ maxWidth: 350 , display: 'flex', flexDirection: 'column', alignItems: 'center' , borderRadius: 12 ,'&:hover': { boxShadow: '0 8px 16px rgba(0, 0, 0, 0.3)' } }}>
         <CardMedia
           component="img"
           height="260"
@@ -193,7 +209,7 @@ import {
           alt="unsplash image"
         />
   
-        <CardContent>
+  <CardContent style={{ textAlign: 'center' , display: 'flex', flexDirection: 'column', alignItems: 'center'  }}>
             <Typography gutterBottom variant = 'h5' component = 'div'>
                 2.00 €
             </Typography>
@@ -203,7 +219,9 @@ import {
           </Typography>
          
         </CardContent>
-        <Button size = 'small'Button color = 'inherit'>Porosite Tani</Button>
+        <Button variant="contained" color="secondary" size = 'medium' >
+          Porosite Tani
+          </Button>
       </Card>
       </Box>
    )

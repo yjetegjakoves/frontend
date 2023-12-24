@@ -10,22 +10,20 @@ import {
     MenuItem
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom'
-import Login from '../Login/Login';
+import MuiDialog from '../LoginBox/MuiLoginBox';
 
 
 
-
+//Navbar
 import CatchingPokemonIcon from '@mui/icons-material/CatchingPokemon';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const MuiNavbar = () => {
     const history = useNavigate();
     const [anchorElementi, setAnchorElementi] = useState(null);
-    const [openLogin, setOpenLogin] = useState(false);
-    const handleLoginClick = () => {
-        history('/login'); 
-        handleClose(); 
-    };
+    const [openDialog, setOpenDialog] = useState(false); // New state for the dialog
+
+    
     const hapur = Boolean(anchorElementi);
 
     const handleClose = () => {
@@ -36,13 +34,15 @@ const MuiNavbar = () => {
         setAnchorElementi(event.currentTarget);
     };
 
-    const handleOpenLogin = () => {
-        setOpenLogin(true);
-        handleClose(); 
-    };
+    const handleDialogOpen = () => {
+        setOpenDialog(true);
+        handleClose(); // Close the menu when opening the dialog
+      };
+
 
     return (
-        <AppBar position='static'>
+        <AppBar position='static' sx={{ backgroundColor: '#555'  }}>
+        
             <Toolbar>
                 <IconButton
                     size='large'
@@ -57,7 +57,7 @@ const MuiNavbar = () => {
                 </Typography>
                 <Stack direction='row' spacing={2}>
                     <Button color='inherit'>Home</Button>
-                    <Button color='inherit'>Products</Button>
+                    <Button color='inherit'>Shoopingcart</Button>
                     <Button
                         color='inherit'
                         id='resources-button'
@@ -68,8 +68,13 @@ const MuiNavbar = () => {
                     >
                         Resources
                     </Button>
-                    <Button color='inherit'>About</Button>
-                    <Button onClick = {handleLoginClick}color='inherit'>Login</Button>
+                    {/* <Button color='inherit'>About</Button> */}
+                    <div>
+                    <Button onClick={handleDialogOpen} color='inherit'> Login
+                        <MuiDialog open={openDialog} onClose={() => setOpenDialog(false)} />
+                    </Button>
+                    </div>
+                    
                 </Stack>
                 <Menu
                     id='resources-menu'
@@ -91,6 +96,7 @@ const MuiNavbar = () => {
                     <MenuItem onClick={handleClose}>Blog</MenuItem>
                     <MenuItem onClick={handleClose}>Podcast</MenuItem>
                 </Menu>
+                
             </Toolbar>
         </AppBar>
     );

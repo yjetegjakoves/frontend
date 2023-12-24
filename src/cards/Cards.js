@@ -98,7 +98,7 @@ function MuiCard() {
       <CardMedia
         component="img"
         height="260"
-        image="https://scontent.fprn12-1.fna.fbcdn.net/v/t39.30808-6/409963630_842630214534997_1166975585917235736_n.jpg?stp=dst-jpg_p843x403&_nc_cat=109&ccb=1-7&_nc_sid=3635dc&_nc_ohc=f4rQqCTIELsAX_BehUE&_nc_ht=scontent.fprn12-1.fna&oh=00_AfDjxxezqe0-hWZUqQxZ5DFtt4AyRDiT5-Q_Q26_rRrPkg&oe=658A9CC5"
+        image="https://scontent.fprn12-1.fna.fbcdn.net/v/t39.30808-6/226663683_879888319546507_2578134454705100745_n.png?_nc_cat=102&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=U5yLq9vX5N4AX9owUAk&_nc_ht=scontent.fprn12-1.fna&oh=00_AfANQfUzxJvobVHgfhfMjCXJVZW_kYqAM2pXFFBeYdk_EA&oe=658D1CF7"
         alt="unsplash image"
       />
       
@@ -122,3 +122,5 @@ function MuiCard() {
 }
 
 export default MuiCard
+
+
