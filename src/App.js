@@ -28,7 +28,7 @@ function App() {
           <Route path = '/produktet' element = {<Produktet />}></Route>
           <Route path = '/kfc' element = {<Kfc />}></Route>
           <Route path = '/berati' element = {<Berati/>}> </Route>
-          <Route path = '/retro' element = {<Retro/>}> </Route>
+          <Route path = '/jaffa' element = {<Retro/>}> </Route>
           <Route path = '/proper' element = {<Proper/>}> </Route>
           <Route path = '/dame' element = {<Dame/>}> </Route>
 
