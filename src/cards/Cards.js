@@ -8,13 +8,24 @@ import {
   CardMedia
 } from '@mui/material'
 import './Cards.css';
+import { css } from '@emotion/react';
+import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function MuiCard() {
+
+  const [showCard, setShowCard] = useState(false);
+
+  useEffect(() => {
+    setShowCard(true);
+  }, []);
+
  return (
 
    
-   <Box sx = {{ display: 'flex', flexwrap: 'wrap', gap: '16px', justifyContent: 'center', alignItems: 'center',}}>
+   <Box  className={`animated-card ${showCard ? 'show' : ''}`} sx = {{ display: 'flex', flexwrap: 'wrap', gap: '16px', justifyContent: 'center', alignItems: 'center',}}>
     
+    <Link to="/proper" style={{ textDecoration: 'none' }}>
      <Card sx={{ maxWidth: 350 }}>
       <CardMedia
         component="img"
@@ -25,12 +36,14 @@ function MuiCard() {
 
       <CardContent>
        
-        <Typography variant="body2" color="text.secondary">
-          Maus
+        <Typography variant="body1" color="text.secondary">
+          Proper Pizza
         </Typography>
       </CardContent>
     </Card>
+    </Link>
 
+    <Link to="/proze" style={{ textDecoration: 'none' }}>
      <Card sx={{ maxWidth: 300 }}>
       <CardMedia
         component="img"
@@ -41,12 +54,14 @@ function MuiCard() {
 
       <CardContent>
     
-        <Typography variant="body2" color="text.secondary">
-          Maus
+        <Typography variant="body1" color="text.secondary">
+          Prozë
         </Typography>
       </CardContent>
     </Card>
+    </Link>
 
+    <Link to="/dame" style={{ textDecoration: 'none' }}>
      <Card sx={{ maxWidth: 300 }}>
       <CardMedia
         component="img"
@@ -57,28 +72,30 @@ function MuiCard() {
 
       <CardContent>
        
-        <Typography variant="body2" color="text.secondary">
-          Maus
+        <Typography variant="body1" color="text.secondary">
+          Dame
         </Typography>
       </CardContent>
     </Card>
+    </Link>
 
-     <Card sx={{ maxWidth: 300 }}>
-      <CardMedia
-        component="img"
-        height="260"
-        image="https://kfckosova.com/wp-content/uploads/2020/04/group-13.svg"
-        alt="unsplash image"
-      />
+    <Link to="/kfc" style={{ textDecoration: 'none' }}>
+      <Card sx={{ maxWidth: 300 }}>
+        <CardMedia
+          component="img"
+          height="260"
+          image="https://kfckosova.com/wp-content/uploads/2020/04/group-13.svg"
+          alt="unsplash image"
+        />
+        <CardContent>
+          <Typography variant="body1" color="text.secondary">
+            KFC
+          </Typography>
+        </CardContent>
+      </Card>
+    </Link>
 
-      <CardContent>
-        
-        <Typography variant="body2" color="text.secondary">
-          Maus
-        </Typography>
-      </CardContent>
-    </Card>
-
+    <Link to="/berati" style={{ textDecoration: 'none' }}>
      <Card sx={{ maxWidth: 300 }}>
       <CardMedia
         component="img"
@@ -88,12 +105,14 @@ function MuiCard() {
       />
       
       <CardContent>
-        <Typography variant="body2" color="text.secondary">
-          Maus
+        <Typography variant="body1" color="text.secondary">
+          Berati Steakhouse
         </Typography>
       </CardContent>
     </Card>
+    </Link>
      
+    <Link to="/jaffa" style={{ textDecoration: 'none' }}>
     <Card sx={{ maxWidth: 300 }}>
       <CardMedia
         component="img"
@@ -103,11 +122,12 @@ function MuiCard() {
       />
       
       <CardContent>
-        <Typography variant="body2" color="text.secondary">
-          Maus
+        <Typography variant="body1" color="text.secondary">
+          Jaffa Flippin' Burgers
         </Typography>
       </CardContent>
     </Card>
+    </Link>
      
 
       

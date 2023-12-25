@@ -33,7 +33,8 @@ import {
          </Typography>
         
        </CardContent>
-       <Button variant="contained" color="secondary" size = 'medium' >
+       <Button variant="contained" sx = {{ backgroundColor : '#7dd87d', '&:hover': {
+          backgroundColor: '#4c9173'}}} size = 'medium' >
         Porosite Tani
         </Button>
      </Card>
@@ -56,7 +57,8 @@ import {
          </Typography>
         
        </CardContent>
-       <Button variant="contained" color="secondary" size = 'medium' >
+       <Button variant="contained" sx = {{ backgroundColor : '#7dd87d', '&:hover': {
+          backgroundColor: '#4c9173'}}} size = 'medium' >
         Porosite Tani
         </Button>
      </Card>
@@ -79,7 +81,8 @@ import {
          </Typography>
         
        </CardContent>
-       <Button variant="contained" color="secondary" size = 'medium' >
+       <Button variant="contained" sx = {{ backgroundColor : '#7dd87d', '&:hover': {
+          backgroundColor: '#4c9173'}}} size = 'medium' >
         Porosite Tani
         </Button>
      </Card>
@@ -102,7 +105,8 @@ import {
          </Typography>
         
        </CardContent>
-       <Button variant="contained" color="secondary" size = 'medium' >
+       <Button variant="contained" sx = {{ backgroundColor : '#7dd87d', '&:hover': {
+          backgroundColor: '#4c9173'}}}size = 'medium' >
         Porosite Tani
         </Button>
      </Card>
@@ -125,7 +129,8 @@ import {
          </Typography>
         
        </CardContent>
-       <Button variant="contained" color="secondary" size = 'medium' >
+       <Button variant="contained" sx = {{ backgroundColor : '#7dd87d', '&:hover': {
+          backgroundColor: '#4c9173'}}} size = 'medium' >
         Porosite Tani
         </Button>
      </Card>
@@ -148,7 +153,8 @@ import {
          </Typography>
         
        </CardContent>
-       <Button variant="contained" color="secondary" size = 'medium' >
+       <Button variant="contained" sx = {{ backgroundColor : '#7dd87d', '&:hover': {
+          backgroundColor: '#4c9173'}}} size = 'medium' >
         Porosite Tani
         </Button>
      </Card>
@@ -171,7 +177,8 @@ import {
          </Typography>
         
        </CardContent>
-       <Button variant="contained" color="primary" size = 'medium' >
+       <Button variant="contained" sx = {{ backgroundColor : '#7dd87d', '&:hover': {
+          backgroundColor: '#4c9173'}}} size = 'medium' >
         Porosite Tani
         </Button>
      </Card>

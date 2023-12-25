@@ -16,16 +16,15 @@ function Home() {
     <div>
       <MuiNavbar/>
       {/* <Main /> */}
-      <Cards />
-      <Beraticard />
+      {/* <Cards /> */}
+      {/* <Beraticard />
       <Prozecard />
       <KFCcard />
       <Damecards />
       <Propercard />
-      <Retrocard />
+      <Retrocard /> */}
       <HeroSection/>
       <Footer />
-      <h2>Home page</h2>
     </div>
   )
 }

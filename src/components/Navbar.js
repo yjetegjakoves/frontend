@@ -15,8 +15,10 @@ import MuiDialog from '../LoginBox/MuiLoginBox';
 
 
 //Navbar
-import CatchingPokemonIcon from '@mui/icons-material/CatchingPokemon';
+
+
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import MuiDialogSignup from '../LoginBox/MuiSignupBox';
 
 const MuiNavbar = () => {
     const history = useNavigate();
@@ -41,7 +43,7 @@ const MuiNavbar = () => {
 
 
     return (
-        <AppBar position='static' sx={{ backgroundColor: '#555'  }}>
+        <AppBar position='static' sx={{ backgroundColor: '#2196f3'  }}>
         
             <Toolbar>
                 <IconButton
@@ -49,53 +51,27 @@ const MuiNavbar = () => {
                     edge='start'
                     color='inherit'
                     aria-label='logo'
+                    sx={{ marginRight: '10px' }}
                 >
-                    <CatchingPokemonIcon />
+                    {/* Your logo/icon */}
                 </IconButton>
-                <Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
-                    POKEMON APP
+                
+                <Typography variant='h6' component='div' sx={{ flexGrow: 1, fontFamily: 'Lobster', fontSize: '1.8rem', color: '#ffffff' }}>
+                    Deri n'Shpi
                 </Typography>
                 <Stack direction='row' spacing={2}>
-                    <Button color='inherit'>Home</Button>
-                    <Button color='inherit'>Shoopingcart</Button>
-                    <Button
-                        color='inherit'
-                        id='resources-button'
-                        onClick={handleClick}
-                        aria-controls={hapur ? 'resources-menu' : undefined}
-                        aria-expanded={hapur ? 'true' : undefined}
-                        endIcon={<KeyboardArrowDownIcon />}
-                    >
-                        Resources
+                    <Button onClick={handleDialogOpen} sx={{ 
+                     color: '#FFFFFF',
+                     marginRight: '10px',
+                     '&:hover': {
+                     color: '#00000'} }}>
+                        <MuiDialogSignup open={openDialog} onClose={() => setOpenDialog(false)} />
                     </Button>
-                    {/* <Button color='inherit'>About</Button> */}
-                    <div>
-                    <Button onClick={handleDialogOpen} color='inherit'> Login
+                    <Button onClick={handleDialogOpen} sx={{ color: '#FFFFFF' }}>
                         <MuiDialog open={openDialog} onClose={() => setOpenDialog(false)} />
                     </Button>
-                    </div>
-                    
                 </Stack>
-                <Menu
-                    id='resources-menu'
-                    anchorEl={anchorElementi}
-                    open={hapur}
-                    MenuListProps={{
-                        'aria-labelledby': 'resources-button'
-                    }}
-                    onClose={handleClose}
-                    anchorOrigin={{
-                        vertical: 'bottom',
-                        horizontal: 'right'
-                    }}
-                    transformOrigin={{
-                        vertical: 'top',
-                        horizontal: 'right'
-                    }}
-                >
-                    <MenuItem onClick={handleClose}>Blog</MenuItem>
-                    <MenuItem onClick={handleClose}>Podcast</MenuItem>
-                </Menu>
+
                 
             </Toolbar>
         </AppBar>

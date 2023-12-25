@@ -29,9 +29,9 @@ const handleSubmit = (event) => {
 }
 
   return (
-    <div className = 'd-flex justify-content-center align-items-center vh-100 bg-primary'>
-      <div className = 'bg-white w-25 p-3 rounded'>
-        <h2>Sign up</h2>
+    <div className = 'd-flex justify-content-center align-items-center h-300 w-400'>
+      <div className = 'bg-white w-400 p-4 rounded'>
+       
         <form action = '' onSubmit = {handleSubmit}>
             <div className = 'mb-3'>
                 <label htmlFor = 'name'><strong>Name</strong></label>

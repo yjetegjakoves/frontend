@@ -6,9 +6,9 @@ import {
   DialogContent,
   DialogActions,
 } from "@mui/material";
-import Login from '../Login/Login'; // Import the Login component
+import Signup from '../Signup/Signup';
 
-const MuiDialog = () => {
+const MuiDialogSignup = () => {
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -21,7 +21,7 @@ const MuiDialog = () => {
 
   return (
     <>
-      <Button onClick={handleOpen} sx = {{ backgroundColor: '#ffffff'}}>Login</Button>
+      <Button onClick={handleOpen} sx = {{ backgroundColor: '#ffffff'}}>Sign Up</Button>
 
       <Dialog
         open={open}
@@ -30,10 +30,10 @@ const MuiDialog = () => {
         aria-describedby='dialog-description'
         sx = {{ minWidth: '500px'}}
       >
-        <DialogTitle id='dialog-title'>Login</DialogTitle>
+        <DialogTitle id='dialog-title'>Sign Up</DialogTitle>
 
         <DialogContent>
-          <Login onClose={handleClose} />
+          <Signup onClose={handleClose} />
         </DialogContent>
 
         <DialogActions>
@@ -44,4 +44,4 @@ const MuiDialog = () => {
   );
 };
 
-export default MuiDialog;
+export default MuiDialogSignup;

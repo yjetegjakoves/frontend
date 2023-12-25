@@ -1,18 +1,18 @@
 import React from 'react'
 import MuiNavbar from '../components/Navbar'
-import Prozecard from '../cards/Prozecard'
 import { Container } from '@mui/material'
+import Beraticard from '../cards/Beraticard'
 
-function Proze() {
+function Berati() {
   return (
     <div>
       <MuiNavbar/>
       <Container maxWidth = {false} sx = {{ height: '70vh'}}>
-        <Prozecard />
+        <Beraticard />
       </Container>
       
     </div>
   )
 }
 
-export default Proze
+export default Berati

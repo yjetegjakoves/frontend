@@ -1,18 +1,18 @@
 import React from 'react'
 import MuiNavbar from '../components/Navbar'
-import Prozecard from '../cards/Prozecard'
 import { Container } from '@mui/material'
+import Damecards from '../cards/Damecards'
 
-function Proze() {
+function Dame() {
   return (
     <div>
       <MuiNavbar/>
       <Container maxWidth = {false} sx = {{ height: '70vh'}}>
-        <Prozecard />
+        <Damecards />
       </Container>
       
     </div>
   )
 }
 
-export default Proze
+export default Dame

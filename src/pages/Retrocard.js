@@ -1,18 +1,18 @@
 import React from 'react'
 import MuiNavbar from '../components/Navbar'
-import Prozecard from '../cards/Prozecard'
 import { Container } from '@mui/material'
+import Retrocard from '../cards/Retrocard'
 
-function Proze() {
+function Retro() {
   return (
     <div>
       <MuiNavbar/>
       <Container maxWidth = {false} sx = {{ height: '70vh'}}>
-        <Prozecard />
+        <Retrocard />
       </Container>
       
     </div>
   )
 }
 
-export default Proze
+export default Retro

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css'; // Import the associated CSS file
+import { SocialIcon } from 'react-social-icons'
 
 const Footer = () => {
   return (
@@ -13,7 +14,9 @@ const Footer = () => {
 
         <div className="footer-section">
           <h2>Follow Us</h2>
-          {/* Add social media icons or links here */}
+          <SocialIcon url="https://instagram.com" />
+          <SocialIcon url="https://twitter.com" />
+          <SocialIcon url="https://facebook.com" />
         </div>
 
         <div className="footer-section">
