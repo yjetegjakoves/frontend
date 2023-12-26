@@ -11,6 +11,8 @@ import {
 } from '@mui/material';
 import { useNavigate } from 'react-router-dom'
 import MuiDialog from '../LoginBox/MuiLoginBox';
+import logo from '../images/transparent.png';
+
 
 
 
@@ -46,18 +48,26 @@ const MuiNavbar = () => {
         <AppBar position='static' sx={{ backgroundColor: '#2196f3'  }}>
         
             <Toolbar>
-                <IconButton
-                    size='large'
-                    edge='start'
-                    color='inherit'
-                    aria-label='logo'
-                    sx={{ marginRight: '10px' }}
-                >
-                    {/* Your logo/icon */}
-                </IconButton>
+            <IconButton
+                size='large'
+                edge='start'
+                color='inherit'
+                aria-label='logo'
+                sx={{ marginRight: '10px' }}
+            >
+                <img
+                    src={logo}
+                    alt="Logo"
+                    style={{
+                    width: '300px',  
+                    height: '50px', 
+                    objectFit: 'cover',  
+                    }}
+                />
+            </IconButton>
                 
                 <Typography variant='h6' component='div' sx={{ flexGrow: 1, fontFamily: 'Lobster', fontSize: '1.8rem', color: '#ffffff' }}>
-                    Deri n'Shpi
+                    
                 </Typography>
                 <Stack direction='row' spacing={2}>
                     <Button onClick={handleDialogOpen} sx={{ 

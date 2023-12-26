@@ -4,6 +4,7 @@ import MuiCard from '../cards/Cards'
 import Container from '@mui/material/Container';
 import Footer from '../components/Footer';
 import Typography from '@mui/material/Typography'
+import logo from '../images/restaurantet transparent.png'
 
 
 
@@ -20,21 +21,16 @@ function Produktet() {
             width: '100%',
             margin: '0 auto', 
             }}>
-                <Typography
-                    variant="h1"
-                    component="div"
-                    sx={{
-                    position: 'absolute',
-                    top: '15%', 
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)', 
-                    zIndex: 1, 
-                    color: 'black', 
-                    textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)', 
+                <img
+                    src={logo}
+                    alt="Logo"
+                    style={{
+                    width: '300px',  // Adjust the width as needed
+                    height: '50px', // Adjust the height as needed
+                    // borderRadius: '100%',
+                    objectFit: 'cover',  // This ensures the image retains its aspect ratio
                     }}
-                >
-                    Restaurantet
-                </Typography>
+                />
                     
                     <MuiCard />
 

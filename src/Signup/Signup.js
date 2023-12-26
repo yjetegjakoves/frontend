@@ -2,8 +2,10 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import Validation from './SignupValidation';
 import axios from 'axios'
+import { Navigate } from 'react-router-dom';
 
-function Signup() {
+
+function Signup({ onSubmit, onClose }) {
 
   const [values, setValues] = useState({ name: '', email: '', password: ''});
   const [errors, setErrors] = useState({});
@@ -15,18 +17,22 @@ function Signup() {
   }
 
 
-const handleSubmit = (event) => {
-    event.preventDefault()
-    setErrors(Validation(values))
-    if(errors.name === '' && errors.email === '' && errors.password === ''){
-        axios.post('http://localhost:5000/signup', values)
-            .then(res => {
-              navigate('/')
-            }).catch(err => {
-              console.log(err)
-            })
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setErrors(Validation(values));
+
+    if (errors.name === '' && errors.email === '' && errors.password === '') {
+      axios.post('http://localhost:5000/signup', values)
+        .then(res => {
+          onSubmit(); // Call the onSubmit callback
+          onClose();  // Close the dialog
+        }).catch(err => {
+          console.log(err);
+        });
     }
-}
+  };
+
+
 
   return (
     <div className = 'd-flex justify-content-center align-items-center h-300 w-400'>

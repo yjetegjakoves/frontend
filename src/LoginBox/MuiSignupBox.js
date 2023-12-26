@@ -6,6 +6,9 @@ import {
   DialogContent,
   DialogActions,
 } from "@mui/material";
+// MuiDialogSignup.js
+
+// ... (other imports)
 import Signup from '../Signup/Signup';
 
 const MuiDialogSignup = () => {
@@ -19,21 +22,25 @@ const MuiDialogSignup = () => {
     setOpen(false);
   };
 
+  const handleSignupSubmit = () => {
+    // You can add additional logic here if needed
+  };
+
   return (
     <>
-      <Button onClick={handleOpen} sx = {{ backgroundColor: '#ffffff'}}>Sign Up</Button>
+      <Button onClick={handleOpen} sx={{ backgroundColor: '#ffffff' }}>Sign Up</Button>
 
       <Dialog
         open={open}
         onClose={handleClose}
         aria-labelledby='dialog-title'
         aria-describedby='dialog-description'
-        sx = {{ minWidth: '500px'}}
+        sx={{ minWidth: '500px' }}
       >
         <DialogTitle id='dialog-title'>Sign Up</DialogTitle>
 
         <DialogContent>
-          <Signup onClose={handleClose} />
+          <Signup onSubmit={handleSignupSubmit} onClose={handleClose} />
         </DialogContent>
 
         <DialogActions>
