@@ -2,6 +2,7 @@ import React from 'react'
 import MuiNavbar from '../components/Navbar'
 import { Container } from '@mui/material'
 import Damecards from '../cards/Damecards'
+import Footer from '../components/Footer'
 
 function Dame() {
   return (
@@ -10,6 +11,8 @@ function Dame() {
       <Container maxWidth = {false} sx = {{ height: '70vh'}}>
         <Damecards />
       </Container>
+
+      <Footer />
       
     </div>
   )
